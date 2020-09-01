@@ -1,3 +1,3 @@
 import './index.html';
 import './style.css';
-import './demo/demo';
+import './demo/demo4';
