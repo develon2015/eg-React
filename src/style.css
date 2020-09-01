@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+.bg-pink {
+    background: pink;
+}
+.no-margin {
+    margin: 0;
+}
