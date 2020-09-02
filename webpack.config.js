@@ -39,12 +39,10 @@ function config(env = {}, argv) { // 当webpack命令没有指定--env参数时,
         console.log('OS:', process.platform);
         try {
             const child_process = require('child_process');
-            if (process.platform.match(/^win.*/)) {
-                // Implement this on Windows OS
-                child_process.execSync(`rmdir /S /Q ${DIR_DIST}`);
-            } else if (process.platform.match(/^linux.*/)) {
-                // Implement this on Linux OS
-                child_process.execSync(`rm -rf ${DIR_DIST}`);
+            if (process.platform.match(/^win.*/)) { // Implement this on Windows OS
+                child_process.execSync(`rmdir /S /Q "${DIR_DIST}"`);
+            } else if (process.platform.match(/^linux.*/)) { // Implement this on Linux OS
+                child_process.execSync(`rm -rf '${DIR_DIST}'`);
             }
         } catch (error) { }
     }
