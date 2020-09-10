@@ -1,5 +1,6 @@
-// import React, { createElement, Component, StrictMode, } from 'react';
-// import ReactDOM from 'react-dom';
+import Two from 'two';
+import React, { createElement, Component, StrictMode, } from 'react';
+import ReactDOM from 'react-dom';
 
 document.body.innerHTML = `<div id="app"><h1>ok</h1></div>`;
 document.head.innerHTML += `
@@ -16,7 +17,6 @@ document.head.innerHTML += `
 </style>`;
 
 class TwoMgr {
-    two = null;
     constructor(container) {
         this.two = new Two({ fullscreen: true, });
         this.two.appendTo(container);
