@@ -23,6 +23,8 @@ const CONFIG = {
     devServer: {
         contentBase: DIR_DIST,
         https: false,
+        disableHostCheck: true,
+        public: "0.0.0.0:0"
     },
     target: 'web',
     externals: {

@@ -1,8 +1,8 @@
-import Two from 'two';
+import Two from 'two.js';
 import React, { createElement, Component, StrictMode, } from 'react';
 import ReactDOM from 'react-dom';
 
-document.body.innerHTML = `<div id="app"><h1>ok</h1></div>`;
+document.body.innerHTML = `<div id="app"></div>`;
 document.head.innerHTML += `
 <style>
 #app {
@@ -13,6 +13,9 @@ document.head.innerHTML += `
 .title {
     background: green;
     color: white;
+}
+h1 {
+    margin: 0;
 }
 </style>`;
 
